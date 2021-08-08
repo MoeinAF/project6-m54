@@ -1,0 +1,103 @@
+    <title>Dashboard</title>
+    <style>
+        .form-control-primary {
+            margin: 10px;
+            opacity: 0.2;
+            border-radius: 2px;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding: 70px 0 0 10px;
+            z-index: 100;
+            border-right: 1px solid #d3d3d3;
+        }
+        .sidebar-left {
+            position: sticky;
+            top: 0;
+            height: calc(100vh - 70px);
+        }
+        .sidebar-nav li .nav-link {
+            color: #333;
+            font-weight: 500;
+        }
+        main {
+            padding-top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-dark bg-primary fixed-top flex-md-nowrap p-8 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 rm-8" href="#">Dashboard</a>
+        <input type="text" class="form-control form-control-primary w-100" placeholder="search ...">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
+        </ul>       
+    </nav>
+    <!-- container -->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-md-2 bg-light d-none d-md-block sidebar">
+                <div class="left-sidebar">
+                    <ul class="nav flex-column sidebar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                                Size of all files
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                                User credentials
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                                Total downloads
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                                Total uploads
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h3>Condidates</h3>
+                <hr>
+                <div class="table-responsive">
+                <table class="table table-dark table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Frist</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Job</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Doctor</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </main>
+        </div>
+    </div>

@@ -1,0 +1,16 @@
+{
+    "name": "moein/mvc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Moein",
+            "email": "newm.moein@gmail.com"
+        }
+    ],
+    "require": {} ,
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
